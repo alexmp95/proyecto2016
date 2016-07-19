@@ -93,11 +93,11 @@ public class Tabla1 extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Yu Mincho Light", 1, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 0, 153));
-        jLabel2.setText("ING. FRANSISCO CUENCA ");
+        jLabel2.setText("Admin");
 
         jLabel3.setFont(new java.awt.Font("Yu Mincho Light", 1, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 0, 153));
-        jLabel3.setText("FUNDAMENTOS DE PROGRAMACION");
+        jLabel3.setText("FUNDAMENTOS DE LA PROGRAMACIÓN");
 
         jLabel4.setFont(new java.awt.Font("Yu Mincho Light", 1, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 0, 153));
@@ -109,7 +109,7 @@ public class Tabla1 extends javax.swing.JFrame {
 
         jLabel6.setFont(new java.awt.Font("Yu Mincho Light", 1, 18)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("SALA H");
+        jLabel6.setText("H");
 
         jButton1.setFont(new java.awt.Font("Yu Mincho Light", 1, 24)); // NOI18N
         jButton1.setText("SALIR ");
@@ -141,15 +141,17 @@ public class Tabla1 extends javax.swing.JFrame {
                             .addGroup(panel1Layout.createSequentialGroup()
                                 .addGap(19, 19, 19)
                                 .addComponent(panel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(87, 87, 87)
                                 .addGroup(panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel1)
                                     .addGroup(panel1Layout.createSequentialGroup()
-                                        .addGap(122, 122, 122)
-                                        .addComponent(jLabel2))
-                                    .addGroup(panel1Layout.createSequentialGroup()
-                                        .addGap(49, 49, 49)
-                                        .addComponent(jLabel3))))
+                                        .addGap(87, 87, 87)
+                                        .addComponent(jLabel1))
+                                    .addGroup(panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addGroup(panel1Layout.createSequentialGroup()
+                                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, panel1Layout.createSequentialGroup()
+                                            .addGap(88, 88, 88)
+                                            .addComponent(jLabel3)))))
                             .addGroup(panel1Layout.createSequentialGroup()
                                 .addGap(435, 435, 435)
                                 .addComponent(jButton1)))
@@ -200,8 +202,7 @@ public class Tabla1 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-           Regui l= new Regui();
-        l.setVisible(true);
+           dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     public static void main(String args[]) {

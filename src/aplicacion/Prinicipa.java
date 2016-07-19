@@ -28,14 +28,17 @@ public class Prinicipa extends javax.swing.JFrame {
     private void initComponents() {
         java.awt.GridBagConstraints gridBagConstraints;
 
+        jLabel5 = new javax.swing.JLabel();
         panel1 = new org.edisoncor.gui.panel.Panel();
         panel2 = new org.edisoncor.gui.panel.Panel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
+
+        jLabel5.setText("jLabel5");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -48,11 +51,11 @@ public class Prinicipa extends javax.swing.JFrame {
         panel2.setLayout(panel2Layout);
         panel2Layout.setHorizontalGroup(
             panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 220, Short.MAX_VALUE)
+            .addGap(0, 440, Short.MAX_VALUE)
         );
         panel2Layout.setVerticalGroup(
             panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 213, Short.MAX_VALUE)
+            .addGap(0, 426, Short.MAX_VALUE)
         );
 
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -67,7 +70,7 @@ public class Prinicipa extends javax.swing.JFrame {
 
         jLabel1.setFont(new java.awt.Font("Yu Mincho Light", 1, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 153, 0));
-        jLabel1.setText("REGISTRO DE CLACES ");
+        jLabel1.setText("REGISTRO DE CLASES ");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 0;
@@ -80,7 +83,7 @@ public class Prinicipa extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Yu Mincho Light", 1, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 153, 0));
-        jLabel2.setText("HORAS DEL DOCENTE ");
+        jLabel2.setText("HORAS DE CLASES - DOCENTE ");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 6;
@@ -90,7 +93,7 @@ public class Prinicipa extends javax.swing.JFrame {
         panel1.add(jLabel2, gridBagConstraints);
 
         jButton1.setFont(new java.awt.Font("Yu Mincho Light", 1, 24)); // NOI18N
-        jButton1.setText("HORAS CLACE");
+        jButton1.setText("HORAS CLASE");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -119,18 +122,7 @@ public class Prinicipa extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(39, 110, 72, 83);
         panel1.add(jButton2, gridBagConstraints);
 
-        jLabel3.setFont(new java.awt.Font("Yu Mincho Light", 1, 24)); // NOI18N
-        jLabel3.setText("HORA: ");
-        gridBagConstraints = new java.awt.GridBagConstraints();
-        gridBagConstraints.gridx = 1;
-        gridBagConstraints.gridy = 1;
-        gridBagConstraints.gridwidth = 3;
-        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
-        gridBagConstraints.insets = new java.awt.Insets(12, 58, 0, 0);
-        panel1.add(jLabel3, gridBagConstraints);
-
         jLabel4.setFont(new java.awt.Font("Yu Mincho Light", 1, 24)); // NOI18N
-        jLabel4.setText("FECHA:");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 1;
         gridBagConstraints.gridy = 2;
@@ -140,11 +132,19 @@ public class Prinicipa extends javax.swing.JFrame {
         gridBagConstraints.insets = new java.awt.Insets(24, 56, 0, 0);
         panel1.add(jLabel4, gridBagConstraints);
 
+        jButton3.setText("Salir");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        panel1.add(jButton3, new java.awt.GridBagConstraints());
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panel1, javax.swing.GroupLayout.DEFAULT_SIZE, 849, Short.MAX_VALUE)
+            .addComponent(panel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1130, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -167,6 +167,11 @@ public class Prinicipa extends javax.swing.JFrame {
             c1.setVisible(true);
             dispose();   
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        dispose();
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -206,10 +211,11 @@ public class Prinicipa extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private org.edisoncor.gui.panel.Panel panel1;
     private org.edisoncor.gui.panel.Panel panel2;
     // End of variables declaration//GEN-END:variables
