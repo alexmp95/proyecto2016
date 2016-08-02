@@ -192,10 +192,10 @@ public class Regui extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-         String usuario="Bry";
+         String usuario="Admin";
          
         
-        String clave="123";
+        String clave="1234";
         
         String pass=new String(txtClav.getPassword());
         String usu=new String(txtUsua.getText());
